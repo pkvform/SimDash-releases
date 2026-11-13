@@ -1,0 +1,2 @@
+b44931ea8a33ee20673049ded254c4f134b1d470b51dec906d1dc46da6bfc0f2  SimDashBridge_1.5.2.exe
+20cfe8eebb3d8b444f07fae7736529773baf19a8bf3d93a4e99ee90be8e93fcd  SimDash-firmware_1.5.2.bin
