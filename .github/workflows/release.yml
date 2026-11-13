@@ -1,0 +1,36 @@
+# RU: Публикует GitHub Release, когда приходит ветка release/v1.2.3. Её коммит несёт
+#     SimDashBridge_1.2.3.exe, SimDash-firmware_1.2.3.bin, SHA256SUMS.txt и release-notes.md;
+#     в ветке main exe никогда нет. После создания релиза (и тега) ветка удаляется: коммит держит тег.
+# EN: Publishes a GitHub Release when a branch named release/v1.2.3 is pushed. Its commit carries
+#     SimDashBridge_1.2.3.exe, SimDash-firmware_1.2.3.bin, SHA256SUMS.txt and release-notes.md;
+#     main never contains the executable. After the release (and tag) exist the branch is deleted.
+name: Release
+
+on:
+  push:
+    branches: ["release/v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify checksums
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          TAG="${BRANCH#release/}"
+          V="${TAG#v}"
+          gh release create "$TAG" "SimDashBridge_$V.exe" "SimDash-firmware_$V.bin" SHA256SUMS.txt \
+            --target "$GITHUB_SHA" \
+            --title "SimDash $V" \
+            --notes-file release-notes.md
+      - name: Remove release branch
+        run: git push origin --delete "${{ github.ref_name }}"

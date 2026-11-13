@@ -1,0 +1,63 @@
+SimDash
+Copyright (c) 2026 Polianskii Konstantin. All rights reserved.
+
+===============================================================================
+RU: УСЛОВИЯ ИСПОЛЬЗОВАНИЯ
+===============================================================================
+
+1. Исходный код SimDash (прошивка дисплея и программа SimDash Bridge) является
+   собственностью правообладателя. Копирование, изменение и распространение
+   исходного кода без письменного разрешения правообладателя не допускаются.
+
+2. Готовую программу (файл SimDashBridge_X.Y.Z.exe со встроенной прошивкой),
+   опубликованную правообладателем, разрешается бесплатно использовать для
+   личных задач.
+
+3. ОТКАЗ ОТ ГАРАНТИЙ. Программа и прошивка предоставляются «как есть» (as is),
+   без каких-либо явных или подразумеваемых гарантий, включая, но не
+   ограничиваясь гарантиями товарной пригодности, пригодности для определённой
+   цели, безошибочной и бесперебойной работы.
+
+4. ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ. Ни при каких обстоятельствах автор и
+   правообладатель не несут ответственности за любой прямой, косвенный,
+   случайный или последующий ущерб, включая повреждение оборудования (в том
+   числе платы дисплея при прошивке), потерю данных, упущенную выгоду и
+   перерывы в работе, возникший в результате использования программы,
+   невозможности её использования или её неправильной работы.
+
+5. Используя программу, вы подтверждаете согласие с этими условиями. Если вы
+   не согласны с ними, не используйте программу.
+
+===============================================================================
+EN: TERMS OF USE
+===============================================================================
+
+1. The source code of SimDash (the display firmware and the SimDash Bridge
+   program) is the property of the copyright holder. Copying, modifying or
+   distributing the source code without the copyright holder's written
+   permission is not permitted.
+
+2. The compiled program (SimDashBridge_X.Y.Z.exe with the embedded firmware)
+   published by the copyright holder may be used free of charge for personal
+   purposes.
+
+3. NO WARRANTY. THE PROGRAM AND FIRMWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY
+   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND ERROR-FREE OR
+   UNINTERRUPTED OPERATION.
+
+4. LIMITATION OF LIABILITY. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE
+   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES,
+   INCLUDING DAMAGE TO HARDWARE (INCLUDING THE DISPLAY BOARD WHILE FLASHING),
+   LOSS OF DATA, LOSS OF PROFITS OR BUSINESS INTERRUPTION, ARISING OUT OF THE
+   USE OF, INABILITY TO USE, OR INCORRECT OPERATION OF THE PROGRAM.
+
+5. By using the program you accept these terms. If you do not accept them, do
+   not use the program.
+
+-------------------------------------------------------------------------------
+Third-party components (each under its own license): LovyanGFX (FreeBSD),
+ArduinoJson (MIT), Arduino-ESP32 / ESP-IDF (LGPL-2.1 / Apache-2.0),
+fyne.io/systray (Apache-2.0), creack/goselect (BSD-2-Clause), godbus/dbus (BSD-2-Clause), go.bug.st/serial (BSD-3-Clause),
+golang.org/x/sys (BSD-3-Clause), fonts Nunito, Roboto Condensed, Exo 2, Teko,
+Orbitron, Oxanium (SIL Open Font License 1.1).
