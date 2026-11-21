@@ -28,7 +28,7 @@ jobs:
         run: |
           TAG="${BRANCH#release/}"
           V="${TAG#v}"
-          gh release create "$TAG" "SimDashBridge_$V.exe" "SimDash-firmware_$V.bin" SHA256SUMS.txt \
+          gh release create "$TAG" --prerelease --latest=false "SimDashBridge_$V.exe" "SimDash-firmware_$V.bin" SHA256SUMS.txt \
             --target "$GITHUB_SHA" \
             --title "SimDash $V" \
             --notes-file release-notes.md
